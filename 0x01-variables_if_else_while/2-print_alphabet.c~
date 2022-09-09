@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *main - Entry point
+ *Return: Success
+ */
+
+int main(void)
+{
+	char alpha = 'a';
+
+	while (alpha <= 'z')
+	{
+		putchar(alpha, "\n");
+		alpha++;
+	}
+
+	return (0);
+}
