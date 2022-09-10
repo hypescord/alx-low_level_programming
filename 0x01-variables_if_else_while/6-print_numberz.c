@@ -1,5 +1,5 @@
-y#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
  *main - Entry point
  *Return: success
@@ -7,11 +7,11 @@ y#include <stdio.h>
 
 int main(void)
 {
-	int num = 0;
+	int num = '0';
 
-	while (num < 10)
+	while (num <= '9')
 	{
-		printf("%i", num);
+		putchar(num);
 		num++;
 	}
 	putchar('\n');
