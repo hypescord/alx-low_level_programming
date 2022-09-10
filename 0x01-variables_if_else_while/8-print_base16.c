@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  *main - Entry point
  *Return: success
@@ -14,8 +13,7 @@ int main(void)
 	{
 		putchar(digits);
 		digits++;
-	}
-				
+	}			
 	while (lower <= 'f')
 	{
 		putchar(lower);
