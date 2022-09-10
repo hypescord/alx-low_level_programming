@@ -1,4 +1,4 @@
-y#include <stdio.h>
+#include <stdio.h>
 
 /**
  *main - Entry point
@@ -7,12 +7,12 @@ y#include <stdio.h>
 
 int main(void)
 {
-	int num = '0';
+	int num = '9';
 
-	while (num <= '9')
+	while (num >= '0')
 	{
 		putchar(num);
-		num++;
+		num--;
 	}
 	putchar('\n');
 	return (0);
