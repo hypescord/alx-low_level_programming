@@ -13,7 +13,7 @@ int main(void)
 	{
 		putchar(digits);
 		digits++;
-	}			
+	}
 	while (lower <= 'f')
 	{
 		putchar(lower);
