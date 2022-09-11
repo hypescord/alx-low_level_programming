@@ -1,31 +1,35 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
  *main - Entry point
- *Return: Always 0
+ *Return: Always success
  */
 
 int main(void)
 {
 	int n;
-	int m;
+	int mod;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	m = n % 10;
-	printf("Last digit of %d is %d ", n, m);
-	if (m > 5)
+	mod = n % 10;
+
+	printf("Last digit of %i is %i ", n, mod);
+
+	if (mod == 0)
 	{
-		puts("and is greater than 5");
+		printf("and is 0\n");
 	}
-	else if (m == 0)
+	else if (mod > 5)
 	{
-		puts("and is 0");
+		printf("and is greater than 5\n");
 	}
 	else
 	{
-		puts("and is less than 6 and not 0");
+		printf("and is less than 6 and not 0\n");
 	}
+
 	return (0);
 }
