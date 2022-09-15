@@ -5,6 +5,8 @@
  * @c: character to be checked for case
  * Return: 1 if true else 0
  */
+int ret;
+
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
