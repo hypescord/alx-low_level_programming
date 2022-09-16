@@ -17,15 +17,19 @@ int main(void)
 	{
 		for (ones = '0'; ones <= '9'; ones++)
 		{
-			for (t = tens; t <= '9'; t++) /*print second of pair*/
+			for (t = '0'; t <= '9'; t++) /*print second of pair*/
 			{
-				for (o = ones + 1; o <= '9'; o++)
+				for (o = (t + '0'); o <= '9'; o++) /*one's ten+1*/
 				{
-					putchar(tens);
-					putchar(ones);
-					putchar(' ');
-					putchar(t);
-					putchar(o);
+					if (!(tens == '0' && ones == '0' &&
+					      t == '0' && o == '0'))
+					{
+						putchar(tens);
+						putchar(ones);
+						putchar(' ');
+						putchar(t);
+						putchar(o);
+					}
 
 					if (!((tens == '9' && ones == '8') &&
 					      (t == '9' && o == '9')))
@@ -34,7 +38,6 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				o = '0';
 			}
 		}
 	}
