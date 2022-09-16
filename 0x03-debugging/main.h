@@ -9,4 +9,6 @@ void positive_or_negative(int i);
  *Return 0
  */
 
+int main(void);
+
 #endif /* MAIN_H */
