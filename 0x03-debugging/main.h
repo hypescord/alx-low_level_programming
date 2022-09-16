@@ -4,7 +4,9 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
+/*
+ *positive_or_negative - test for positivity
+ *Return 0
+ */
 
-
-
-#endif
+#endif /* MAIN_H */
