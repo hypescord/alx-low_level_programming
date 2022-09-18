@@ -2,7 +2,7 @@
 
 /**
  * print_line - draw a straight line
- * @n - number of times character should be printed
+ * @n: number of times character should be printed
  * Return: void
  */
 
