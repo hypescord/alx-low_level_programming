@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_number - print an integer, without using long, arrays, or pointers
- * @n: number to be printed
+ * print_number - print an integer with _putchar
+ * @n: integer to print
+ * Return: void
  */
 
 void print_number(int n)
 {
-	unsigned int tens, digit, positive = n;
-	double t_beg = 1;
+	unsigned int tens, digit, sign = n;
+	double scroll = 1;
 
 	if (n == 0)
 		_putchar('0');
@@ -16,19 +17,19 @@ void print_number(int n)
 	{
 		if (n < 0)
 		{
-			positive = n * -1;
+			sign = -n;
 			_putchar('-');
 		}
 
-		while (t_beg <= positive)
-			t_beg *= 10;
-		tens = t_beg / 10;
+		while (scroll <= sign)
+			scroll *= 10;
+		tens = scroll / 10;
 
 		while (tens >= 1)
 		{
-			digit = positive / tens;
+			digit = sign / tens;
 			_putchar(digit + '0');
-			positive = (positive - (tens * digit));
+			sign = (sign - (tens * digit));
 			tens /= 10;
 		}
 	}
