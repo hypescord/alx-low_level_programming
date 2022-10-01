@@ -2,8 +2,8 @@
 
 /**
  *main - print all arguments passed
- *@argc: counter
- *@argv: elements
+ *@argc: counter stuff
+ *@argv: elements array
  *Return: 0 success
  */
 
