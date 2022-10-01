@@ -7,6 +7,7 @@
  * @argv: array pointing to arguments
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
 	int i, sum = 0;
@@ -16,9 +17,9 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]))
+		if (!atoi(argv[i]))
 		{
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 		}
 		sum += atoi(argv[i]);
